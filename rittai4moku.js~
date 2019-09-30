@@ -1,0 +1,15 @@
+let board=[];
+for(let i=0; i<6; i++){
+    board.push([]);
+    for(let j=0; j<7; j++){
+	//board[i][j]=0;
+	board[i].push(0)
+    }
+}
+
+app=new Vue({
+    el:"#board",
+    data:{
+	board: board,
+    }
+});

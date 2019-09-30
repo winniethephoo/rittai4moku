@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>立体４目</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <svg id="board" width="800" height="800">
+    <g v-for="(row,i) in board">
+    <rect v-for="(c,j) in row"
+       :x="100*j" :y="100*i" width="100" height="100" fill="white" stroke="black"> </rect>
+    </g>
+    </svg>
+<script src="rittai4moku.js"></script>
+</body>
+</html>
